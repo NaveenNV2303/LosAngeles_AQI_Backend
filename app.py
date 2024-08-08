@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load the saved model
-model = load_model('./lstm_aqi_model.keras')
+model = load_model('./new_lstm_aqi_model.h5')
 
 # Load the scaler and the original dataset to fit the scaler
 file_path = './los_angeles_data_combined.csv'
