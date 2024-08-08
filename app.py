@@ -3,9 +3,10 @@ import numpy as np
 import pandas as pd
 from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
-import datetime
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Load the saved model
 model = load_model('./lstm_aqi_model.keras')
